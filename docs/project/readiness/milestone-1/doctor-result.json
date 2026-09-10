@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "result_id": "preflight-current",
+  "project_id": "service-booking-1",
+  "recorded_at": "2026-09-10T21:26:24.139234Z",
+  "snapshot_digest": "4552d6bc27d0d7531b5d3231754f83e2c9d6218e7d4315c57348573b355e06f3",
+  "redacted": true,
+  "result": "pass",
+  "checks": [
+    {
+      "check_id": "configuration",
+      "outcome": "pass",
+      "summary": "studio.yaml is valid."
+    },
+    {
+      "check_id": "secret-references",
+      "outcome": "not_applicable",
+      "summary": "No secret references are required."
+    }
+  ]
+}

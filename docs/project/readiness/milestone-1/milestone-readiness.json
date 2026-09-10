@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0.0",
+  "readiness_id": "readiness-milestone-foundation-delivery-001",
+  "outcome": "revision_required",
+  "milestone_id": "milestone-foundation-delivery",
+  "specification_reference": {
+    "artifact_id": "spec-service-booking-phase-one",
+    "locator": "docs/discovery/project-specification.json",
+    "schema_version": "1.0.0",
+    "sha256": "49464b8bc24216de31a1d3ea2c6251051f5311d306aa5eba5e30f4dce7006356"
+  },
+  "plan_reference": {
+    "artifact_id": "plan-service-booking-phase-one",
+    "locator": "docs/project/planning/phase-one-milestone-plan.json",
+    "schema_version": "1.0.0",
+    "sha256": "5516c48eb7557727f2de2c20915391e77e508df970a241e96be8efa6cc1bb79c"
+  },
+  "effective_standards": {
+    "decision": "applicable",
+    "rationale": "Repository, Studio, quality-gate, workflow, and baseline standards were resolved for the milestone.",
+    "evidence_references": [
+      {
+        "artifact_id": "evidence-m1-effective-standards",
+        "locator": "docs/project/readiness/milestone-1/effective-standards.md",
+        "schema_version": "1.0.0",
+        "sha256": "0d923870ad2f8c1b5f09f1cab71f94fb48c3be8862d723efe6ba7e0df1281dd5"
+      }
+    ],
+    "applicable_standard_ids": ["agents-root", "quality-gates", "workflow", "baseline"],
+    "exception_ids": []
+  },
+  "role_skill_independence": {
+    "decision": "applicable",
+    "rationale": "Implementer, reviewer, build, quality, audit, architecture, and orchestration duties are separated.",
+    "evidence_references": [
+      {
+        "artifact_id": "evidence-m1-role-independence",
+        "locator": "docs/project/readiness/milestone-1/role-skill-independence.md",
+        "schema_version": "1.0.0",
+        "sha256": "5f1ac7ae92a3ed54cbf8207a3040aa05a48611baa24697277f0cdd27fdeabd54"
+      }
+    ],
+    "covered_role_ids": ["architect", "backend-engineer", "frontend-engineer", "code-reviewer", "build-manager", "quality-engineer", "independent-auditor", "orchestrator"]
+  },
+  "trusted_capability": {
+    "decision": "applicable",
+    "rationale": "Only approved local build, test, GitHub tracking, and non-deploying CI capabilities are in scope.",
+    "evidence_references": [
+      {
+        "artifact_id": "evidence-m1-trusted-capability",
+        "locator": "docs/project/readiness/milestone-1/trusted-capability.md",
+        "schema_version": "1.0.0",
+        "sha256": "e0f0624439337dd9cd945eab782d425c5c3096c245f58f16cae04244aa72e86e"
+      }
+    ],
+    "capability_ids": ["local-git", "studioctl", "approved-build-toolchains", "github-tracking", "github-actions"]
+  },
+  "threat_decision": {
+    "decision": "applicable",
+    "rationale": "Foundation trust boundaries and controls were traced to implementation and verification seams.",
+    "evidence_references": [
+      {
+        "artifact_id": "evidence-m1-threat-decision",
+        "locator": "docs/project/readiness/milestone-1/threat-decision.md",
+        "schema_version": "1.0.0",
+        "sha256": "597a6f0a735f9dd6c49d2ff2d6ef3f51ddeed4ae506701473cd12964659a46a4"
+      }
+    ],
+    "control_ids": ["ctrl-m1-browser-api", "ctrl-m1-db", "ctrl-m1-redaction", "ctrl-m1-pr-runner", "ctrl-m1-release", "ctrl-m1-local-authority"]
+  },
+  "doctor_result": {
+    "decision": "applicable",
+    "rationale": "The redacted Studio doctor result passed configuration and required no secret references.",
+    "evidence_references": [
+      {
+        "artifact_id": "evidence-m1-doctor",
+        "locator": "docs/project/readiness/milestone-1/doctor-result.json",
+        "schema_version": "1.0.0",
+        "sha256": "5274caed0f1ebcb1be0bc5a5ddb40923ff8cd4f879d05e04c6cdab8058a99dd6"
+      }
+    ],
+    "redacted": true
+  },
+  "integration_test_plan": {
+    "decision": "applicable",
+    "rationale": "Backend, frontend, browser, orchestration, CI failure, and reproducibility evidence are planned.",
+    "evidence_references": [
+      {
+        "artifact_id": "evidence-m1-integration-tests",
+        "locator": "docs/project/readiness/milestone-1/integration-test-plan.md",
+        "schema_version": "1.0.0",
+        "sha256": "7abdee7274d8112180fddc1f46ad5236bff56785fb18d229fa17b6446a6ce030"
+      }
+    ],
+    "integration_point_ids": ["if-m1-http", "if-m1-errors", "if-m1-persistence", "if-m1-session", "if-m1-ci", "if-m1-release", "if-m1-tracking"]
+  },
+  "rolling_progress": {
+    "decision": "applicable",
+    "rationale": "Current alignment and the blocked readiness state are recorded for safe resumption.",
+    "evidence_references": [
+      {
+        "artifact_id": "evidence-m1-rolling-progress",
+        "locator": "docs/project/readiness/milestone-1/rolling-progress.md",
+        "schema_version": "1.0.0",
+        "sha256": "4324482a143c3d1c0395a6fe54c6712273e86b7ac3a1b86eddffe012fbfd1204"
+      },
+      {
+        "artifact_id": "evidence-m1-control-plane-blocker",
+        "locator": "docs/project/readiness/milestone-1/control-plane-blocker.md",
+        "schema_version": "1.0.0",
+        "sha256": "07a5af1c8514ed16083b0267c08322ddad7badd456cd32b4acff4adbbf94760c"
+      }
+    ]
+  },
+  "boundary": "cross_boundary",
+  "role_applicability": [
+    {"role": "Architect", "decision": "applicable", "rationale": "Owns the foundation architecture contract.", "evidence_reference": {"artifact_id": "role-m1-architect", "locator": ".codex/agents/architect.toml", "schema_version": "1.0.0", "sha256": "7a939be720631de39b11f89387197b845917ed7e86ff998728692bea22fae142"}, "owner_instance_id": "architect-001"},
+    {"role": "Backend Engineer", "decision": "applicable", "rationale": "Owns backend foundation and assigned delivery automation.", "evidence_reference": {"artifact_id": "role-m1-backend", "locator": "docs/project/readiness/milestone-1/role-skill-independence.md", "schema_version": "1.0.0", "sha256": "5f1ac7ae92a3ed54cbf8207a3040aa05a48611baa24697277f0cdd27fdeabd54"}, "owner_instance_id": "backend-engineer-001"},
+    {"role": "Frontend Engineer", "decision": "applicable", "rationale": "Owns frontend foundation.", "evidence_reference": {"artifact_id": "role-m1-frontend", "locator": "docs/project/readiness/milestone-1/role-skill-independence.md", "schema_version": "1.0.0", "sha256": "5f1ac7ae92a3ed54cbf8207a3040aa05a48611baa24697277f0cdd27fdeabd54"}, "owner_instance_id": "frontend-engineer-001"},
+    {"role": "Code Reviewer", "decision": "applicable", "rationale": "Owns independent exact-candidate review.", "evidence_reference": {"artifact_id": "role-m1-code-review", "locator": "docs/project/readiness/milestone-1/role-skill-independence.md", "schema_version": "1.0.0", "sha256": "5f1ac7ae92a3ed54cbf8207a3040aa05a48611baa24697277f0cdd27fdeabd54"}, "owner_instance_id": "code-reviewer-001"},
+    {"role": "Build Manager", "decision": "applicable", "rationale": "Owns reproducible build and supply-chain verification.", "evidence_reference": {"artifact_id": "role-m1-build", "locator": "docs/project/readiness/milestone-1/role-skill-independence.md", "schema_version": "1.0.0", "sha256": "5f1ac7ae92a3ed54cbf8207a3040aa05a48611baa24697277f0cdd27fdeabd54"}, "owner_instance_id": "build-manager-001"},
+    {"role": "Quality Engineer", "decision": "applicable", "rationale": "Owns supported blast-radius verification.", "evidence_reference": {"artifact_id": "role-m1-qe", "locator": "docs/project/readiness/milestone-1/role-skill-independence.md", "schema_version": "1.0.0", "sha256": "5f1ac7ae92a3ed54cbf8207a3040aa05a48611baa24697277f0cdd27fdeabd54"}, "owner_instance_id": "quality-engineer-001"},
+    {"role": "Independent Auditor", "decision": "applicable", "rationale": "Owns read-only evidence audit to the Orchestrator.", "evidence_reference": {"artifact_id": "role-m1-audit", "locator": "docs/project/readiness/milestone-1/role-skill-independence.md", "schema_version": "1.0.0", "sha256": "5f1ac7ae92a3ed54cbf8207a3040aa05a48611baa24697277f0cdd27fdeabd54"}, "owner_instance_id": "independent-auditor-001"},
+    {"role": "Orchestrator", "decision": "applicable", "rationale": "Owns coordination, readiness, evidence routing, and human boundaries.", "evidence_reference": {"artifact_id": "role-m1-orchestrator", "locator": "AGENTS.md", "schema_version": "1.0.0", "sha256": "c93409788e85a8f88a77f863e4320ce5ee3017362a63b3778b93e89f6e0b7df5"}, "owner_instance_id": "orchestrator-001"}
+  ],
+  "affected_roles": ["Architect", "Backend Engineer", "Frontend Engineer", "Code Reviewer", "Build Manager", "Quality Engineer", "Independent Auditor", "Orchestrator"],
+  "approved_instances": [],
+  "acceptance_criterion_ids": ["ac-nfr-tests-1", "ac-nfr-tests-2", "ac-nfr-tests-3", "ac-nfr-storage-1", "ac-nfr-storage-2", "ac-nfr-github-tracking-1", "ac-nfr-github-tracking-2", "ac-nfr-github-tracking-3", "ac-nfr-github-tracking-4", "ac-nfr-github-ci-1", "ac-nfr-github-ci-2", "ac-nfr-github-ci-3", "ac-nfr-github-ci-4", "ac-nfr-release-artifacts-1", "ac-nfr-release-artifacts-2", "ac-nfr-release-artifacts-3", "ac-nfr-release-artifacts-4"],
+  "facilitator": "orchestrator-001",
+  "validated_at": "2026-09-10T21:33:30Z",
+  "unresolved_items": [
+    "The supplied studioctl has no supported run initialization or lifecycle transition path and continues to report phase new/not_initialized.",
+    "Remaining exact build-tool, action, PostgreSQL, and base-image pins/digests require Build Manager evidence before a build-ready claim."
+  ],
+  "work_packages": [
+    {"work_package_id": "task-m1-architecture", "owner_instance_id": "architect-001", "owned_locators": ["docs/architecture", "docs/api"], "dependency_work_package_ids": [], "sequence": 1, "deliverable": "Versioned repository, runtime, API, persistence, security, test, tracking, CI, and release contracts.", "integration_references": [{"artifact_id": "contract-m1-foundation", "locator": "docs/architecture/milestone-1-foundation-contract.md", "schema_version": "1.0.0", "sha256": "2360247713f9bce07bc949d29e74d557ceeab7213570bb01e1f55dc5ebd19967"}]},
+    {"work_package_id": "task-m1-backend-foundation", "owner_instance_id": "backend-engineer-001", "owned_locators": ["backend"], "dependency_work_package_ids": ["task-m1-architecture"], "sequence": 2, "deliverable": "Tested Spring Boot, PostgreSQL/Flyway, health, security baseline, and backend container foundation.", "integration_references": [{"artifact_id": "contract-m1-backend", "locator": "docs/architecture/milestone-1-foundation-contract.md", "schema_version": "1.0.0", "sha256": "2360247713f9bce07bc949d29e74d557ceeab7213570bb01e1f55dc5ebd19967"}]},
+    {"work_package_id": "task-m1-frontend-foundation", "owner_instance_id": "frontend-engineer-001", "owned_locators": ["frontend"], "dependency_work_package_ids": ["task-m1-architecture"], "sequence": 2, "deliverable": "Tested React shell, generated API types, handwritten transport, i18n/accessibility baseline, and frontend container.", "integration_references": [{"artifact_id": "contract-m1-frontend", "locator": "docs/architecture/milestone-1-foundation-contract.md", "schema_version": "1.0.0", "sha256": "2360247713f9bce07bc949d29e74d557ceeab7213570bb01e1f55dc5ebd19967"}]},
+    {"work_package_id": "task-m1-delivery-automation", "owner_instance_id": "backend-engineer-001", "owned_locators": ["e2e", "scripts", ".github", "compose.yaml", "Makefile", ".tool-versions", "docs/project/progress"], "dependency_work_package_ids": ["task-m1-backend-foundation", "task-m1-frontend-foundation"], "sequence": 3, "deliverable": "Local/GitHub validation, browser smoke, tracker reconciliation, and reproducible non-deploying release artifacts.", "integration_references": [{"artifact_id": "contract-m1-delivery", "locator": "docs/architecture/milestone-1-foundation-contract.md", "schema_version": "1.0.0", "sha256": "2360247713f9bce07bc949d29e74d557ceeab7213570bb01e1f55dc5ebd19967"}]}
+  ],
+  "interface_decisions": [
+    {"interface_id": "if-m1-http", "owner_instance_id": "architect-001", "work_package_id": "task-m1-architecture", "integration_reference": {"artifact_id": "contract-m1-foundation", "locator": "docs/architecture/milestone-1-foundation-contract.md", "schema_version": "1.0.0", "sha256": "2360247713f9bce07bc949d29e74d557ceeab7213570bb01e1f55dc5ebd19967"}, "reference": {"artifact_id": "interface-m1-http", "locator": "docs/architecture/milestone-1-foundation-contract.md", "schema_version": "1.0.0", "sha256": "2360247713f9bce07bc949d29e74d557ceeab7213570bb01e1f55dc5ebd19967"}, "example": "GET /api/v1/health returns application/json with {status: UP}; frontend uses a relative same-origin /api/v1 transport."},
+    {"interface_id": "if-m1-errors", "owner_instance_id": "architect-001", "work_package_id": "task-m1-architecture", "integration_reference": {"artifact_id": "contract-m1-foundation", "locator": "docs/architecture/milestone-1-foundation-contract.md", "schema_version": "1.0.0", "sha256": "2360247713f9bce07bc949d29e74d557ceeab7213570bb01e1f55dc5ebd19967"}, "reference": {"artifact_id": "interface-m1-errors", "locator": "docs/architecture/milestone-1-foundation-contract.md", "schema_version": "1.0.0", "sha256": "2360247713f9bce07bc949d29e74d557ceeab7213570bb01e1f55dc5ebd19967"}, "example": "API failures use application/problem+json with stable code, safe detail, status, and request-path instance."},
+    {"interface_id": "if-m1-persistence", "owner_instance_id": "backend-engineer-001", "work_package_id": "task-m1-backend-foundation", "integration_reference": {"artifact_id": "contract-m1-backend", "locator": "docs/architecture/milestone-1-foundation-contract.md", "schema_version": "1.0.0", "sha256": "2360247713f9bce07bc949d29e74d557ceeab7213570bb01e1f55dc5ebd19967"}, "reference": {"artifact_id": "interface-m1-persistence", "locator": "docs/architecture/milestone-1-foundation-contract.md", "schema_version": "1.0.0", "sha256": "2360247713f9bce07bc949d29e74d557ceeab7213570bb01e1f55dc5ebd19967"}, "example": "Backend alone consumes injected PostgreSQL settings; Flyway V1 owns schema initialization and tests use real PostgreSQL."},
+    {"interface_id": "if-m1-session", "owner_instance_id": "backend-engineer-001", "work_package_id": "task-m1-backend-foundation", "integration_reference": {"artifact_id": "contract-m1-backend", "locator": "docs/architecture/milestone-1-foundation-contract.md", "schema_version": "1.0.0", "sha256": "2360247713f9bce07bc949d29e74d557ceeab7213570bb01e1f55dc5ebd19967"}, "reference": {"artifact_id": "interface-m1-session", "locator": "docs/architecture/milestone-1-foundation-contract.md", "schema_version": "1.0.0", "sha256": "2360247713f9bce07bc949d29e74d557ceeab7213570bb01e1f55dc5ebd19967"}, "example": "SESSION is HttpOnly/SameSite=Lax and CSRF proof uses the separate X-XSRF-TOKEN header for unsafe cookie-authenticated methods."},
+    {"interface_id": "if-m1-ci", "owner_instance_id": "backend-engineer-001", "work_package_id": "task-m1-delivery-automation", "integration_reference": {"artifact_id": "contract-m1-delivery", "locator": "docs/architecture/milestone-1-foundation-contract.md", "schema_version": "1.0.0", "sha256": "2360247713f9bce07bc949d29e74d557ceeab7213570bb01e1f55dc5ebd19967"}, "reference": {"artifact_id": "interface-m1-ci", "locator": "docs/architecture/milestone-1-foundation-contract.md", "schema_version": "1.0.0", "sha256": "2360247713f9bce07bc949d29e74d557ceeab7213570bb01e1f55dc5ebd19967"}, "example": "make test and make e2e run the same entry points locally and in CI; any backend/browser failure blocks release production."},
+    {"interface_id": "if-m1-release", "owner_instance_id": "backend-engineer-001", "work_package_id": "task-m1-delivery-automation", "integration_reference": {"artifact_id": "contract-m1-delivery", "locator": "docs/architecture/milestone-1-foundation-contract.md", "schema_version": "1.0.0", "sha256": "2360247713f9bce07bc949d29e74d557ceeab7213570bb01e1f55dc5ebd19967"}, "reference": {"artifact_id": "interface-m1-release", "locator": "docs/architecture/milestone-1-foundation-contract.md", "schema_version": "1.0.0", "sha256": "2360247713f9bce07bc949d29e74d557ceeab7213570bb01e1f55dc5ebd19967"}, "example": "Release archives and OCI images bind to one validated source revision; no registry push or environment deployment occurs."},
+    {"interface_id": "if-m1-tracking", "owner_instance_id": "backend-engineer-001", "work_package_id": "task-m1-delivery-automation", "integration_reference": {"artifact_id": "contract-m1-delivery", "locator": "docs/architecture/milestone-1-foundation-contract.md", "schema_version": "1.0.0", "sha256": "2360247713f9bce07bc949d29e74d557ceeab7213570bb01e1f55dc5ebd19967"}, "reference": {"artifact_id": "interface-m1-tracking", "locator": "docs/architecture/milestone-1-foundation-contract.md", "schema_version": "1.0.0", "sha256": "2360247713f9bce07bc949d29e74d557ceeab7213570bb01e1f55dc5ebd19967"}, "example": "Each local stable ID maps to one GitHub URL; remote status never changes local approval and failed sync remains retryable."}
+  ],
+  "source_snapshot": "ea752c521becff2c3b3926f66beea0480e471bbd",
+  "contract_snapshot_created": false,
+  "contract_snapshot_blocked_reason": "ContractSnapshot requires a ready readiness outcome; the supplied Studio control plane remains uninitialized."
+}
