@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "apr-service-booking-1-plan-001",
+  "subject_type": "milestone_plan_and_instance_set",
+  "subject_id": "plan-service-booking-phase-one",
+  "subject_digest": "7f601a82fae72d191db3344eaef7f5727b399e89b293cc903cb810dd2671fce0",
+  "decision": "approved",
+  "decided_by": "application-owner",
+  "decided_at": "2026-09-10T21:24:37Z",
+  "comment": "Application owner explicitly approved both the exact phase-one milestone plan and the exact seven-instance set: architect-001, backend-engineer-001, frontend-engineer-001, code-reviewer-001, build-manager-001, quality-engineer-001, and independent-auditor-001."
+}

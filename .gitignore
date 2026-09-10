@@ -1,0 +1,8 @@
+.studio/runs/
+.studio/context/
+.studio/security/
+conformance.json
+conformance.md
+worktrees/
+.worktrees/
+.superpowers/
