@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "verified_at": "2026-09-11T00:31:55Z",
+  "project_id": "service-booking-1",
+  "source_revision": "8beb3c054077ae05fdc35f4af88c28117bd516b6",
+  "run_id": "run-service-booking-pre-native",
+  "migration": {
+    "import_manifest": {
+      "locator": "docs/studio-migration/import-manifest.json",
+      "sha256": "b84eab2213edb0ed5aec1c8334a202a1e3a567bf3f6cf8fdc50c6d8304ce7317"
+    },
+    "source_evidence_inventory": {
+      "locator": "docs/studio-migration/source-evidence-inventory.json",
+      "sha256": "1dcd5d06b8e4b30d6df43bcbf73aef34138d2762cb14efedfc66db3bd51c80c9",
+      "artifact_count": 21,
+      "all_digests_match": true
+    },
+    "imported_artifact_count": 10,
+    "last_event_sequence": 14,
+    "provenance": "pre_native_import",
+    "import_state": "complete",
+    "phase": "blocked",
+    "blockers": ["Imported readiness requires revision."],
+    "next_action": "Submit new readiness evidence.",
+    "task_event_count": 0,
+    "fresh_passing_readiness_submitted": false
+  },
+  "checks": {
+    "control_plane_integrity": "pass",
+    "control_plane_projection": "pass",
+    "history_contains_failed_readiness": true,
+    "legacy_instruction_digest_preserved": true,
+    "codex_instruction_override": "AGENTS.override.md",
+    "codex_prompt_debugger_loaded_override": true,
+    "control_command": "./studioctl status",
+    "discovery_prompt_outcome": "governed_blocked_continuation"
+  }
+}

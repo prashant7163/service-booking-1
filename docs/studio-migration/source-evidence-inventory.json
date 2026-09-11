@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "source": "service-booking-1-pre-native-evidence",
+  "source_revision": "8beb3c054077ae05fdc35f4af88c28117bd516b6",
+  "artifacts": [
+    {"locator": ".codex/agents/architect.toml", "sha256": "7a939be720631de39b11f89387197b845917ed7e86ff998728692bea22fae142"},
+    {"locator": ".studio/context/resume-marker-discovery-awaiting-first-answer.json", "sha256": "da23ccad11ae1f01d888669c77bde07aaffb64d069f6f87759bb4dd9e1be75ec"},
+    {"locator": "AGENTS.md", "sha256": "c93409788e85a8f88a77f863e4320ce5ee3017362a63b3778b93e89f6e0b7df5"},
+    {"locator": "docs/architecture/milestone-1-foundation-contract.md", "sha256": "2360247713f9bce07bc949d29e74d557ceeab7213570bb01e1f55dc5ebd19967"},
+    {"locator": "docs/discovery/project-specification-draft.md", "sha256": "5325c11584fa5797bb267699e377e3c5bfe41f9901fb70a9e61765a456290be2"},
+    {"locator": "docs/discovery/project-specification.json", "sha256": "49464b8bc24216de31a1d3ea2c6251051f5311d306aa5eba5e30f4dce7006356"},
+    {"locator": "docs/discovery/specification-validation.json", "sha256": "6ac18b952b266c28ae7b6c78ee8b24e4d371c18d3e3628fb63f25ea11a0a8f1f"},
+    {"locator": "docs/project/planning/phase-one-milestone-plan.json", "sha256": "5516c48eb7557727f2de2c20915391e77e508df970a241e96be8efa6cc1bb79c"},
+    {"locator": "docs/project/planning/phase-one-plan-approval.json", "sha256": "fbaca65a0090f68b3a93461528c66ce4e09c225b5a0a86438fb9c569ffc701c4"},
+    {"locator": "docs/project/planning/phase-one-plan-validation.json", "sha256": "3bf5853c69ee6e6fd604a87849c4a126e64fd11875427418c68e1f330479ef15"},
+    {"locator": "docs/project/readiness/milestone-1/control-plane-blocker.md", "sha256": "07a5af1c8514ed16083b0267c08322ddad7badd456cd32b4acff4adbbf94760c"},
+    {"locator": "docs/project/readiness/milestone-1/doctor-result.json", "sha256": "5274caed0f1ebcb1be0bc5a5ddb40923ff8cd4f879d05e04c6cdab8058a99dd6"},
+    {"locator": "docs/project/readiness/milestone-1/effective-standards.md", "sha256": "0d923870ad2f8c1b5f09f1cab71f94fb48c3be8862d723efe6ba7e0df1281dd5"},
+    {"locator": "docs/project/readiness/milestone-1/integration-test-plan.md", "sha256": "7abdee7274d8112180fddc1f46ad5236bff56785fb18d229fa17b6446a6ce030"},
+    {"locator": "docs/project/readiness/milestone-1/milestone-readiness-validation.json", "sha256": "543c5a15afbb3839a1f8407f31adc92783a0ef6ab5bc1353e5aef8d60c5a7967"},
+    {"locator": "docs/project/readiness/milestone-1/milestone-readiness.json", "sha256": "219e66943a4b2d99f281837dae9c70383fea7e2604ef785d8e63fbb061948bea"},
+    {"locator": "docs/project/readiness/milestone-1/role-skill-independence.md", "sha256": "5f1ac7ae92a3ed54cbf8207a3040aa05a48611baa24697277f0cdd27fdeabd54"},
+    {"locator": "docs/project/readiness/milestone-1/rolling-progress.md", "sha256": "4324482a143c3d1c0395a6fe54c6712273e86b7ac3a1b86eddffe012fbfd1204"},
+    {"locator": "docs/project/readiness/milestone-1/threat-decision.md", "sha256": "597a6f0a735f9dd6c49d2ff2d6ef3f51ddeed4ae506701473cd12964659a46a4"},
+    {"locator": "docs/project/readiness/milestone-1/trusted-capability.md", "sha256": "e0f0624439337dd9cd945eab782d425c5c3096c245f58f16cae04244aa72e86e"},
+    {"locator": "docs/superpowers/plans/2026-09-10-service-booking-phase-one.md", "sha256": "3fbb9d1c07510f2ff3bb7f95da9e1bd4cb0ef18cf8474fde3ca73abf49977dd0"}
+  ]
+}

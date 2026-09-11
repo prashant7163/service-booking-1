@@ -1,0 +1,105 @@
+{
+  "active_run_id": "run-service-booking-pre-native",
+  "last_event_sequence": 14,
+  "runs": {
+    "run-service-booking-pre-native": {
+      "active_attempt_number": null,
+      "active_controls": {},
+      "active_milestone_id": null,
+      "active_session_id": null,
+      "active_task_id": null,
+      "artifacts": [
+        {
+          "kind": "supporting_evidence",
+          "sha256": "7d59ce00285d5a53670401b0346f35ffeba44662b5b10e02206c329160d13835",
+          "snapshot_locator": ".studio/runs/run-service-booking-pre-native/artifacts/7d59ce00285d5a53670401b0346f35ffeba44662b5b10e02206c329160d13835.json",
+          "source_locator": "docs/studio-migration/source-evidence-inventory.json",
+          "subject_id": null
+        },
+        {
+          "kind": "resume_marker",
+          "sha256": "bba6008146cd026431dcdffecba3ae3638fe560876f69539af96ebb15754b856",
+          "snapshot_locator": ".studio/runs/run-service-booking-pre-native/artifacts/bba6008146cd026431dcdffecba3ae3638fe560876f69539af96ebb15754b856.json",
+          "source_locator": ".studio/context/resume-marker-discovery-awaiting-first-answer.json",
+          "subject_id": "milestone-one-readiness-revision-required"
+        },
+        {
+          "kind": "specification",
+          "sha256": "fb19490552df0cd06b2b418f9486cd7c0b4a8d97eb1cbd3412656354123386ba",
+          "snapshot_locator": ".studio/runs/run-service-booking-pre-native/artifacts/fb19490552df0cd06b2b418f9486cd7c0b4a8d97eb1cbd3412656354123386ba.json",
+          "source_locator": "docs/discovery/project-specification.json",
+          "subject_id": "service-booking-1"
+        },
+        {
+          "kind": "supporting_evidence",
+          "sha256": "136b4a41a4681c92996d831775ceec405026088ec2b2ba2cec5203985a5a7c4c",
+          "snapshot_locator": ".studio/runs/run-service-booking-pre-native/artifacts/136b4a41a4681c92996d831775ceec405026088ec2b2ba2cec5203985a5a7c4c.json",
+          "source_locator": "docs/discovery/specification-validation.json",
+          "subject_id": null
+        },
+        {
+          "kind": "plan",
+          "sha256": "1c9feb14a314a5586330901968707049db7a37ae4a1c4b34197add00d5822c0f",
+          "snapshot_locator": ".studio/runs/run-service-booking-pre-native/artifacts/1c9feb14a314a5586330901968707049db7a37ae4a1c4b34197add00d5822c0f.json",
+          "source_locator": "docs/project/planning/phase-one-milestone-plan.json",
+          "subject_id": "plan-service-booking-phase-one"
+        },
+        {
+          "kind": "approval",
+          "sha256": "c0b088bb7098c9b2ee3a696ecc330a4fbd79f8bf68b83c6ce68c20cc13cbfc4b",
+          "snapshot_locator": ".studio/runs/run-service-booking-pre-native/artifacts/c0b088bb7098c9b2ee3a696ecc330a4fbd79f8bf68b83c6ce68c20cc13cbfc4b.json",
+          "source_locator": "docs/project/planning/phase-one-plan-approval.json",
+          "subject_id": "plan-service-booking-phase-one"
+        },
+        {
+          "kind": "supporting_evidence",
+          "sha256": "e819d95702ed5ecbabb3f8078eaae721169f4724dc37d8dc050b36ff12f68f77",
+          "snapshot_locator": ".studio/runs/run-service-booking-pre-native/artifacts/e819d95702ed5ecbabb3f8078eaae721169f4724dc37d8dc050b36ff12f68f77.json",
+          "source_locator": "docs/project/planning/phase-one-plan-validation.json",
+          "subject_id": null
+        },
+        {
+          "kind": "supporting_evidence",
+          "sha256": "55aa0600c53af0e28e43b61d01e73cc0b943f6451afa37406da325e0bf36f163",
+          "snapshot_locator": ".studio/runs/run-service-booking-pre-native/artifacts/55aa0600c53af0e28e43b61d01e73cc0b943f6451afa37406da325e0bf36f163.json",
+          "source_locator": "docs/project/readiness/milestone-1/doctor-result.json",
+          "subject_id": null
+        },
+        {
+          "kind": "supporting_evidence",
+          "sha256": "7c3369dcf1ecbb193020de9cd27d1bed707efb553bfce2afa3fdefead997a621",
+          "snapshot_locator": ".studio/runs/run-service-booking-pre-native/artifacts/7c3369dcf1ecbb193020de9cd27d1bed707efb553bfce2afa3fdefead997a621.json",
+          "source_locator": "docs/project/readiness/milestone-1/milestone-readiness-validation.json",
+          "subject_id": null
+        },
+        {
+          "kind": "readiness",
+          "sha256": "5df5a28c7f372a64b97bfcd983d7b12b9f707ba2cb1116213e081bba389b08ba",
+          "snapshot_locator": ".studio/runs/run-service-booking-pre-native/artifacts/5df5a28c7f372a64b97bfcd983d7b12b9f707ba2cb1116213e081bba389b08ba.json",
+          "source_locator": "docs/project/readiness/milestone-1/milestone-readiness.json",
+          "subject_id": "readiness-milestone-foundation-delivery-001"
+        }
+      ],
+      "blockers": [
+        "Imported readiness requires revision."
+      ],
+      "capability_states": {},
+      "current_action": null,
+      "current_source_revision": "8beb3c054077ae05fdc35f4af88c28117bd516b6",
+      "import_state": "complete",
+      "incident_states": {},
+      "last_event_sequence": 14,
+      "latest_checkpoint_id": null,
+      "latest_resume_classification": null,
+      "next_action": null,
+      "phase": "blocked",
+      "project_id": "service-booking-1",
+      "provenance": "pre_native_import",
+      "retry_counters": {},
+      "run_id": "run-service-booking-pre-native",
+      "selected_runtime": "codex",
+      "session_ids": [],
+      "task_states": {}
+    }
+  }
+}
